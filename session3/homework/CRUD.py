@@ -21,10 +21,14 @@ while True:
         for index,item in enumerate(items):
             print(index+1,"\b.",item)
     elif w == "D" or w == "d":
-        i = int(input("Delete position?: ")) - 1
-        del items[i]
-        for index,item in enumerate(items):
-            print(index+1,"\b.",item)
+        while True:
+            i = int(input("Delete position?: ")) - 1
+            if i > range(len(items)) or i <0:
+                print("I dont know what you mean!")
+            else:     
+                del items[i]
+                for index,item in enumerate(items):
+                    print(index+1,"\b.",item)
     elif w == "X" or w == "x":
         break
     else:
