@@ -20,8 +20,13 @@ for i,j in inventory.items():
 
 
 inventory["Backpack"].remove("dagger")
+print(input("\nLets remove the dagger! Press Enter to countinue."))
+for i,j in inventory.items():
+    print(a,". {0}: {1}".format(i,j))
+    a +=1
+
 x = int(input("\nHow much gold do you want to add?: "))
 inventory["Gold"] += x
-print("  --"*10,"\nAnd now we have {0} gold".format(inventory["Gold"]))
+print("--  "*10,"\nAnd now we have {0} gold".format(inventory["Gold"]))
 
 
