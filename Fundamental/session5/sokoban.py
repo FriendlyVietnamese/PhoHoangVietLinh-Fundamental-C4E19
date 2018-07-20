@@ -16,28 +16,32 @@ destination = [
     {"x":2,"y":3},
     {"x":3,"y":4},
 ]
+
 while True:
     for y in range(map["size_y"]):
         for x in range(map["size_x"]):
             box_is_here = False
             des_is_here = False
             player_is_here = False
+            win_the_game = False
             if x == player["x"] and y == player["y"]:
                 player_is_here = True  
-            for toado in boxes:
-                if x == toado["x"] and y == toado["y"]:
+            for box in boxes:
+                if x == box["x"] and y == box["y"]:
                     box_is_here = True
             for des in destination:
                 if x == des["x"] and y == des["y"]:
                     des_is_here = True  
-                
+            
+            
             
             if player_is_here == True:
                 print("P ", end ="\t")
             elif box_is_here == True:
                 print("B ", end = "\t")        
             elif des_is_here == True:
-                print("D ", end = "\t")    
+                print("D ", end = "\t")  
+              
             
             else:
                 print("- ", end ="\t")
@@ -63,6 +67,8 @@ while True:
             if player["x"] == item["x"] and player["y"] == item["y"]:
                 item["x"] +=dx
                 item["y"] +=dy
+    for des,item in destination,boxes:
+        if des["x"] == item["x"] and
                 
     
     
