@@ -8,6 +8,6 @@ while True:
 	        return x			
 	    elif y != 0:
 	    	return GCD(y, x % y)
-	print GCD(x,y)
+print GCD(x,y)
 
 
