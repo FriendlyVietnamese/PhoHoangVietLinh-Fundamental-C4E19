@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search page</title>
+</head>
+<body>
+    {% for customer in customers %}
+    <h1>Name: {{customer.name}}</h1>    
+    <p><i>Gender: {{customer.gender}}</i></p>    
+    <p><i>Email: {{customer.email}}</i></p>
+    <p><i>Company: {{customer.company}}</i></p>
+    <p><i>Job: {{customer.job}}</i></p>
+    {% endfor %}
+    <br>
+</body>
+</html>
