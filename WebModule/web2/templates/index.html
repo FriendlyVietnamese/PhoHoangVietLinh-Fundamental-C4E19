@@ -7,14 +7,13 @@
     <title>Landing Page</title>
 </head>
 <body>
-    <h1>Hề lố ma dờ phạc cơ!</h1>
+    <h1>Hề lố!</h1>
     <br>
-    <img src="http://docs.mongoengine.org/guide/querying.html#query-operators/200x300" alt="">
-    
-    <!-- url_for() là hàm để chạy function gì đó, Vd chạy function search, gender = 0 -->
+    <img src="/WebModule/web2/models/static/image/female-profile.jpg" alt="lỗi"><br>
     <!-- anchor, target = # để bật tab mới. src = <source> -->
-    <a href="{{url_for('search', gender=0)}}" target="#">Search for Male</a><br>
-    <a href="{{url_for('search', gender=1)}}" target= "#">Search for Female</a>
-    
+    <a href="{{url_for("search")}}">All contacts</a><br>
+    <a href="{{url_for("new_service")}}">Thêm người dùng</a><br>
+    <a href="{{url_for("admin")}}">Admin</a><br>
+            
 </body>
 </html>

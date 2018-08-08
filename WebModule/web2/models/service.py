@@ -1,15 +1,24 @@
 ##design database
 #http://docs.mongoengine.org/guide/defining-documents.html#fields
 from mongoengine import *
+from random import choices,randint
+def so_do(a,b,c):
+    return "{0} - {1} - {2}".format(a,b,c)
+def describe(a,b,c):
+    return "{0}, {1}, {2}".format(a,b,c)
+
 class Service(Document):
+    image = StringField()
     name = StringField()
     yob = IntField()
     gender = IntField()
-    height = IntField()
     phone = StringField()
+    height = IntField()
     address = StringField()
-    status = BooleanField()
+    describe = StringField()
+    info = StringField()
 
+    
 
 # new_service = Service(
 #     name = "Phó Hoàng Việt Linh",

@@ -1,0 +1,25 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page CMS</title>
+</head>
+<body>
+    <h1>Welcome!</h1><br>
+    <a href="{{url_for("login")}}">Hello</a>
+    {% for video in videos %}
+    <div>
+        <a href="{{url_for("detail", youtube_id = video.youtube_id)}}">
+            <img src="{{video.thumbnail}}" width="250px" height="200px">
+            <p><b>{{video.title}}</b></p>
+            <p><i> Views: {{video.views}}</i></p>
+            <br><br><br>
+        </a> 
+        
+    </div>
+    {%endfor%}
+
+</body>
+</html>

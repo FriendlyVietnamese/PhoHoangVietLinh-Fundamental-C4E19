@@ -1,0 +1,62 @@
+<!-- Tag	Description
+<table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Defines a row in a table
+<td>	Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ad</title>
+</head>
+<body>
+    <h1>Hello !</h1>
+    <!-- tạo bảng -->
+    <table border="1px">    
+        <thead>
+            <td>STT</td>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Yob</th> 
+            <th>Height</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Status</th>
+            <th>Action</th>
+        </thead>
+    <tbody>
+        {% for service in all_service %}
+        <tr>
+            <!--loop.index là biến đếm đi kèm với vòng lặp, bắt đầu từ 1 -->
+            <td>{{loop.index}}</td>
+            <td>{{service.name}}</td> 
+            <td>{{service.yob}}</td>
+            <td> {% if service.gender == 1%}
+                    <p>Nam</p>
+                {% else %}
+                    <p>Nữ</p>
+                {% endif %} </td>
+            
+            <td>{{service.height}}</td>
+            <td>{{service.phone}}</td>
+            <td>{{service.address}}</td>
+            <td>{{service.describe}}</td>
+            <td>
+                    <a href="{{url_for("update",service_id = service.id)}}">Sửa</a>
+                    <a href="{{url_for("delete",service_id = service.id)}}">Xóa</a>
+                </td>
+        </tr>
+        {% endfor %}
+        
+    </tbody>
+    </table>
+</body>
+</html>
