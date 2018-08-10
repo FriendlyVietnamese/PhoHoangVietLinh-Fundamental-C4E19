@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vui lòng đăng nhập trước khi sử dụng dịch vụ</h1>
+    <form method = "POST">
+        <label>ID</label>
+        <input type="text", name = "user"><br>
+        <label>Password</label>
+        <input type="password", name = "password"><br>
+        <input type="submit" value="Log in"><br>
+        <a href="{{url_for("signup")}}">Chưa có tài khoản? Tạo ngay!</a>
+
+    </form>
+</body>
+</html>

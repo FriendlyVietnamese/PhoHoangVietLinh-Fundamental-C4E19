@@ -9,11 +9,16 @@
 <body>
     <h1>Hề lố!</h1>
     <br>
-    <img src="/WebModule/web2/models/static/image/female-profile.jpg" alt="lỗi"><br>
+    <!-- <img src="{{Ơ}}" alt="lỗi"><br> -->
     <!-- anchor, target = # để bật tab mới. src = <source> -->
-    <a href="{{url_for("search")}}">All contacts</a><br>
-    <a href="{{url_for("new_service")}}">Thêm người dùng</a><br>
+    <a href="{{url_for("search")}}">All services</a><br>
+    <a href="{{url_for("new_service")}}">Add Service</a><br>
     <a href="{{url_for("admin")}}">Admin</a><br>
+    <p><a href="{{url_for("login")}}">Đăng nhập ngay</a> <br>
+        <a href="{{url_for("signup")}}">Chưa có tài khoản? Tạo ngay</a></p>
+    <a href="{{url_for("logout")}}">Đăng xuất</a>
+    
+    
             
 </body>
 </html>

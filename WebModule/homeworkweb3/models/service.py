@@ -1,23 +1,35 @@
 ##design database
 #http://docs.mongoengine.org/guide/defining-documents.html#fields
 from mongoengine import *
-from random import choices,randint
+import datetime
+
 def so_do(a,b,c):
     return "{0} - {1} - {2}".format(a,b,c)
 def describe(a,b,c):
     return "{0}, {1}, {2}".format(a,b,c)
 
 class Service(Document):
-    image = StringField()
-    name = StringField()
-    yob = IntField()
-    gender = IntField()
-    phone = StringField()
-    height = IntField()
-    address = StringField()
-    describe = StringField()
-    info = StringField()
-
+    image = StringField(required = True)
+    name = StringField(required = True)
+    yob = IntField(required = True)
+    gender = IntField(required = True)
+    phone = StringField(required = True)
+    height = IntField(required = True)
+    address = StringField(required = True)
+    describe = StringField(required = True)
+    info = StringField(required = True)
+class User(Document):
+    name = StringField(required = True)
+    email = StringField(required = True)
+    user = StringField(required = True)
+    password = StringField(required = True)
+class Order(Document):
+    
+    service_id = ReferenceField(Service)
+    user_id = ReferenceField(User)
+    is_accepted = BooleanField(default= datetime.datetime.now)
+    time = DateTimeField(default= False)
+    
     
 
 # new_service = Service(
