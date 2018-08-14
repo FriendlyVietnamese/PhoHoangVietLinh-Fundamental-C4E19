@@ -1,0 +1,131 @@
+#left{
+    align-self: flex-start;
+    width: 15%;
+    height: 1000px;
+    /* background-color: wheat; */
+}
+.left2-1{
+    width: 100%;
+    height: 15.1%;
+    background-color: blue;
+}
+#left1{
+    width:100% ;
+    height: 150px;
+    background-color: pink;
+}
+#left2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: lightblue;
+    width: 100%;
+    height: 300px;
+}
+#left-3{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 550px;
+    /* background-color: black; */
+    margin-top: 30%;
+}
+.left3-1{
+    width: 100%;
+    height: 48%;
+    background-color: grey;
+}
+#right{
+    width: 83%;
+    height: 1000px;
+    
+}
+#right2-1{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content:space-between;
+    align-items: flex-end;
+    widows: 100%;
+    height: 550px;
+    background-color: lightgreen;
+}
+.right2-1-1{
+    width: 24.5%;
+    height: 15%;
+    background-color: green;
+    }
+#right-3{
+    display: flex;
+    flex-flow: nowrap;
+    width: 100%;
+    height: 90px;
+}
+#right-4{
+    display: flex;
+    justify-content: space-between;
+}
+#right-5{
+    display: flex;
+    justify-content: space-between;
+}
+.right-5{
+    height: 300px;
+    width: 24%;
+    background-color: pink;
+}
+.right3-blue{
+    width: 70%;
+    background-color: skyblue ;   
+    height: 100%; 
+}
+.right3-pink{
+    width: 30%;
+    height: 100%;
+    background-color: lightpink
+}
+.right-4{
+    background-color: greenyellow;
+    width: 24%;
+    height: 120px;
+}
+
+
+
+.inline-block{
+    display: inline-block;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.align-content-center{
+    align-content: space-around;
+/* .align-content- */
+}
+.wrap{
+    flex-flow: wrap;
+}
+
+/*  */
+.margin-top{
+    margin-top: 20px;
+}
+.margin-left{
+    margin-left: 20px;
+}
+.justify-space-between{
+    /* flex-flow: column; */
+    justify-content: space-around;
+}
+
+.display-flex{
+    display: flex;
+    flex-flow: wrap;
+}
+#bottom{
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    margin-top: 12%;
+}
