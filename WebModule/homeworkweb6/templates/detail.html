@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{service.name}}</title>
+</head>
+<body>
+        <p> <img src="{{service.image}}" alt="Lỗi rồi"></p>
+        <b>{{service.name}} </b>
+        <p><i>Năm sinh: {{service.yob}}</i></p>
+        <p><i> Chiều cao: {{service.height}}</i></p>
+        <p><i>Phone: {{service.phone}}</i></p>
+        <p><i>Địa chỉ: {{service.address}}</i></p>
+        <p><i>Mô tả: {{service.describe}}</i></p>
+        <p><i>Số đo: {{service.info}}</i></p>
+        <a href="{{url_for("order", service_id = service.id)}}">Đặt hàng ngay!</a>
+</body>
+</html>

@@ -5,19 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing Page</title>
+    {% include "meta-data.html" %}
 </head>
 <body>
-    <h1>Hề lố!</h1>
-    <br>
-    <!-- <img src="{{Ơ}}" alt="lỗi"><br> -->
-    <!-- anchor, target = # để bật tab mới. src = <source> -->
-    <a href="{{url_for("search")}}">All services</a><br>
-    <a href="{{url_for("new_service")}}">Add Service</a><br>
-    <a href="{{url_for("admin")}}">Admin</a><br>
-    <p><a href="{{url_for("login")}}">Đăng nhập ngay</a> <br>
-        <a href="{{url_for("signup")}}">Chưa có tài khoản? Tạo ngay</a></p>
-    <a href="{{url_for("logout")}}">Đăng xuất</a>
-    
+    {% include "homepage/navigation.html" %}
+    {% include "homepage/carousel.html" %}
+
     
             
 </body>

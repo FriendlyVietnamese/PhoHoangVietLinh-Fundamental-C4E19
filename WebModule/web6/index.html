@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- css mình viết -->
+    <link rel="stylesheet" href="/homeworkweb3/static/css/style.css">
+    <!-- font awsome -->    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <!-- boostrap chia trang thành 1 trang lưới 12 cột -->
+
+
+</head>
+<body class="container">
+    <h1 class="text-center text-success">Bootstrap Playground</h1>
+    <!-- <div class="d-flex justify-content-between">
+        <div class="bg-success h-100px col-md-4 d-inline-block "></div>
+        <div class="bg-primary h-100px col-md-6 d-inline-block"></div>
+    </div> -->
+    
+    
+    <!-- Bài tập 1 -->
+    <!-- <div class="bg-success h-100px col-md-12 d-flex justify-content-between">
+        <div class="bg-dark h-80px col-md-2 d-inline-block mt-2"></div>
+        <div class="h-80px col-md-3 d-inline-block mt-2 d-flex">
+            <div class="bg-danger h-80px col-md-4 d-inline-block mr-1"></div>
+            <div class="bg-dark h-80px col-md-4 d-inline-block mr-1"></div>
+            <div class="bg-info h-80px col-md-4 d-inline-block mr-1"></div>
+
+            
+        </div>
+    </div>
+    <div class="bg-transparent d-flex justify-content-between">
+        <div class="col-md-2 bg-warning h-800px mt-3"></div>
+        <div class="col-md-2 bg-warning h-800px mt-3"></div>
+    </div>
+    <div class="bg-success col-md-12 d-flex justify-content-around h-100px mt-">
+        <div class="col-md-3 bg-dark h-80px mt-2"></div>
+        <div class="col-md-3 bg-dark h-80px mt-2"></div>
+        <div class="col-md-3 bg-dark h-80px mt-2"></div> -->
+    <!-- </div> -->
+    
+    <!-- Tạo nút bấm trong page -->
+    <button class="btn btn-outline-info">Click me<i class="fab fa-accessible-icon ml-1"></i></button>
+
+    <div class="progress my-5">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+         role="progressbar" 
+         style="width: 75%;" 
+         aria-valuenow="75" 
+         aria-valuemin="0" 
+         aria-valuemax="100">
+         75%
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+    Click to see the magic
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Do you want to delete this item?  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
